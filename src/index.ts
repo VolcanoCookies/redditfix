@@ -3,8 +3,6 @@ import { Response } from 'express';
 import { Request } from 'express';
 import fetch from 'node-fetch';
 
-//https://www.reddit.com/r/shitposting/comments/tz2kkj/frnch/?utm_source=share&utm_medium=web2x&context=3
-
 const app = express();
 
 app.set('view engine', 'hbs');
