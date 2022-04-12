@@ -43,8 +43,6 @@ app.get('/r/:subreddit/comments/:postId*', async (req: Request, res: Response) =
 	const subreddit: string = req.params['subreddit'];
 	const postId: string = req.params['postId'];
 
-	console.log(req.ip);
-
 	if (!subreddit || !postId) return res.sendStatus(400);
 
 	const data = await fetch(`https://reddit.com/r/${subreddit}/comments/${postId}.json`);
