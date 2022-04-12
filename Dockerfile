@@ -17,7 +17,7 @@ WORKDIR /redditfix/
 COPY --from=BUILD /redditfix/dist ./dist
 COPY --from=BUILD /redditfix/package.json ./package.json
 COPY --from=BUILD /redditfix/package-lock.json ./package-lock.json
-COPY ./public /redditfix/public
+COPY ./public/views /redditfix/views
 RUN npm ci
 
 ENTRYPOINT [ "npm", "start" ]
