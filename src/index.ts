@@ -73,4 +73,4 @@ app.get('/r/:subreddit/comments/:postId*', async (req: Request, res: Response) =
 
 });
 
-app.listen(80);
+app.listen(process.env.PORT);
