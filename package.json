@@ -1,0 +1,25 @@
+{
+	"name": "redditfix",
+	"version": "1.0.0",
+	"description": "Better discord embeds for reddit posts.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node dist/index.js",
+		"node-watch": "cd dist && nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Volcano",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.3",
+		"hbs": "^4.2.0",
+		"node-fetch": "^3.2.3"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/hbs": "^4.0.1",
+		"@types/node-fetch": "^2.6.1"
+	}
+}
